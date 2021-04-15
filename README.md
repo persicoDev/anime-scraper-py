@@ -1,4 +1,5 @@
 ## scraper-py
 
  that's a little video scraper i wrote works with some websites.. 
- u can also save ur links to a link.txt 
+ u can also save ur links to a link.txt.
+ actually will only work with animesaturn but not with all of them animes.
