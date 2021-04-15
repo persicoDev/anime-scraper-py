@@ -14,9 +14,10 @@ while True:
         video_container = str(soup.findAll('video')) 
     if(video_container != '[]'):
         if(choice == 1):
+            video_container = video_container.split('"')
             file = open('link.txt', 'a')
             file.write(video_container + "\n")
             file.close()
-        print(video_container)
+        print(video_container[1])
     else:
         print('not working link')
