@@ -14,10 +14,12 @@ while True:
         video_container = str(soup.findAll('video')) 
     if(video_container != '[]'):
         if(choice == 1):
-            video_container = video_container.split('"')
+            newList = []
+            for i in video_container:
+                newList.append(video_container.split('"')[1])
             file = open('link.txt', 'a')
-            file.write(video_container + "\n")
+            file.write(newList[1] + "\n")
             file.close()
-        print(video_container[1])
+        print(newList[1])
     else:
         print('not working link')
