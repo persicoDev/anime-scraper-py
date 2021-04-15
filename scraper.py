@@ -13,10 +13,10 @@ while True:
     if(video_container == '[]'): # verifying if using the "source" tag found the link or not
         video_container = str(soup.findAll('video')) 
     if(video_container != '[]'):
-        if(choice == 1):
         newList = []
-            for i in video_container:
-                newList.append(video_container.split('"')[1])
+        for i in video_container:
+            newList.append(video_container.split('"')[1])
+        if(choice == 1):
             file = open('link.txt', 'a')
             file.write(newList[1] + "\n")
             file.close()
