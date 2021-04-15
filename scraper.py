@@ -6,7 +6,7 @@ import requests
 while True:
     choice = int(input('vuoi inserire il tuo risultato in un file? (1 per sì) (2 per il no): '))
     link = str(input('inserisci il link (0 per uscire): '))
-    if  link == 0:
+    if  link == '0':
         break
     soup = BeautifulSoup(requests.get(link).content, 'html.parser')
     video_container = str(soup.findAll('source')) # searchs all "videos", change this to make the script work for img or maybe text
