@@ -14,7 +14,7 @@ while True:
         video_container = str(soup.findAll('video')) 
     if(video_container != '[]'):
         if(choice == 1):
-            newList = []
+        newList = []
             for i in video_container:
                 newList.append(video_container.split('"')[1])
             file = open('link.txt', 'a')
